@@ -6,21 +6,21 @@ import { ChevronRight, ChevronLeft } from 'lucide-react';
 const slides = [
   {
     id: 1,
-    image: '/Home/Emerald_Diamond_Earrings.png',
+    image: 'public/Home/Emerald_Diamond_Earrings.png',
     title: 'Discover Your',
     highlight: 'Sparkle',
     description: 'Welcoming In The Spring Season With An Enchanting Emerald, Diamond & Gold Dance With Earrings.'
   },
   {
     id: 2,
-    image: '/Home/Golden_Heritage.png',
+    image: 'public/Home/Golden_Heritage.png',
     title: 'Timeless',
     highlight: 'Elegance',
     description: 'Crafted for moments that last forever. Explore our heritage collection of fine Gold.'
   },
   {
     id: 3,
-    image: '/Home/Modern_GoldenLocket.png',
+    image: 'public/Home/Modern_GoldenLocket.png',
     title: 'Modern',
     highlight: 'Luxury',
     description: 'Redefining sophistication with contemporary designs for the modern visionary.'
