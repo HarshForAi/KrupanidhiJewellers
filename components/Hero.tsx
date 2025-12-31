@@ -6,35 +6,35 @@ import { ChevronRight, ChevronLeft } from 'lucide-react';
 const slides = [
   {
     id: 1,
-    image: 'public/Home/Emerald_Diamond_Earrings.png',
+    image: '/Home/Emerald_Diamond_Earrings.png',
     title: 'Discover Your',
     highlight: 'Sparkle',
     description: 'Welcoming In The Spring Season With An Enchanting Emerald, Diamond & Gold Dance With Earrings.'
   },
   {
     id: 2,
-    image: 'public/Home/Golden_Heritage.png',
+    image: '/Home/Golden_Heritage.png',
     title: 'Timeless',
     highlight: 'Elegance',
     description: 'Crafted for moments that last forever. Explore our heritage collection of fine Gold.'
   },
   {
     id: 3,
-    image: 'public/Home/Modern_GoldenLocket.png',
+    image: '/Home/Modern_GoldenLocket.png',
     title: 'Modern',
     highlight: 'Luxury',
     description: 'Redefining sophistication with contemporary designs for the modern visionary.'
   },
   {
     id: 4,
-    image: 'Public/Home/Modern_GoldenRing.png',
+    image: '/Home/Modern_GoldenRing.png',
     title: 'Endless',
     highlight: 'Fire',
     description: 'Ignite your passion with our exquisite collection of Golden Rings with Modern touches.'
   },
   {
     id: 5,
-    image: 'Public/Home/Sapphire_Necklace.png',
+    image: '/Home/Sapphire_Necklace.png',
     title: 'Royal',
     highlight: 'Blue',
     description: 'Experience the allure of deep blue sapphires set in intricate gold patterns.'
