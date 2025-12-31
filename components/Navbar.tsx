@@ -185,7 +185,7 @@ export const Navbar: React.FC<NavbarProps> = ({ currentView, onHomeClick, onTerm
                 className={`flex items-center gap-3 p-2 md:py-2 md:px-2 md:pr-6 rounded-full transition-all duration-300 cursor-pointer ${pillClasses}`}
             >
                 <img 
-                  src="Public/Logo/Krupanidhi.svg" 
+                  src="/Logo/Krupanidhi.svg" 
                   alt="Krupanidhi" 
                   className="w-12 h-12 rounded-full object-cover shadow-sm bg-black/70 dark:bg-white/5"
                   onError={(e) => {

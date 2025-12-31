@@ -35,7 +35,7 @@ export const Materials: React.FC<MaterialsProps> = ({ onBack }) => {
       <div className="relative w-full max-w-[1400px] mx-auto px-6 mb-24">
         <div className="relative rounded-[3rem] overflow-hidden shadow-2xl h-[60vh] min-h-[500px]">
             <img 
-                src="Public/Materials/Header_Material.png" 
+                src="/Materials/Header_Material.png" 
                 alt="Raw Materials Texture" 
                 className="w-full h-full object-cover"
             />
@@ -120,7 +120,7 @@ export const Materials: React.FC<MaterialsProps> = ({ onBack }) => {
                 className="order-1 lg:order-2 relative h-[600px] w-full rounded-[2.5rem] overflow-hidden shadow-2xl border border-gold-200 dark:border-white/10"
              >
                  <img 
-                    src="Public/Materials/GoldBars.png" 
+                    src="/Materials/GoldBars.png" 
                     alt="Molten Gold Texture" 
                     className="w-full h-full object-cover transition-transform duration-1000 hover:scale-110"
                  />
@@ -140,7 +140,7 @@ export const Materials: React.FC<MaterialsProps> = ({ onBack }) => {
                 className="relative h-[600px] w-full rounded-[2.5rem] overflow-hidden shadow-2xl border border-neutral-200 dark:border-white/10"
              >
                  <img 
-                    src="Public/Materials/SilverBars.png" 
+                    src="/Materials/SilverBars.png" 
                     alt="Silver Craftsmanship" 
                     className="w-full h-full object-cover transition-transform duration-1000 hover:scale-110 grayscale-[0.2]"
                  />
@@ -227,7 +227,7 @@ export const Materials: React.FC<MaterialsProps> = ({ onBack }) => {
                 className="order-1 lg:order-2 relative h-[600px] w-full rounded-[2.5rem] overflow-hidden shadow-2xl border border-gold-200 dark:border-white/10"
              >
                  <img 
-                    src="Public/Materials/Sapphire_Gemstone.png" 
+                    src="/Materials/Sapphire_Gemstone.png" 
                     alt="Vivid Gemstones" 
                     className="w-full h-full object-cover transition-transform duration-1000 hover:scale-110"
                  />

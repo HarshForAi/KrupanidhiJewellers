@@ -8,7 +8,7 @@ const products = [
     name: 'Temple Necklace',
     category: 'Royal Indian Heritage',
     description: 'A stunning temple necklace that embodies the essence of Indian craftsmanship.',
-    image: 'Public/CuratedMasterPieces/Temple_Necklace.png',
+    image: '/CuratedMasterPieces/Temple_Necklace.png',
     featured: true
   },
   {
@@ -16,7 +16,7 @@ const products = [
     name: 'Maharani Necklace',
     category: 'Necklaces',
     description: 'An heirloom-quality necklace designed for royal elegance.',
-    image: 'Public/CuratedMasterPieces/Maharani_Necklace.png',
+    image: '/CuratedMasterPieces/Maharani_Necklace.png',
     featured: false
   },
   {
@@ -24,7 +24,7 @@ const products = [
     name: 'Antique Gold Bangles',
     category: 'Bangles',
     description: 'Exquisite antique gold bangles that add a touch of tradition to any ensemble.',
-    image: 'Public/CuratedMasterPieces/Antique_Gold_Bangles.png',
+    image: '/CuratedMasterPieces/Antique_Gold_Bangles.png',
     featured: false
   }
 ];

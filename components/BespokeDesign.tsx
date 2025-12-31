@@ -54,7 +54,7 @@ export const BespokeDesign: React.FC<BespokeDesignProps> = ({ onBack }) => {
         <div className="relative h-[70vh] w-full max-w-[1400px] mx-auto overflow-hidden rounded-[3rem] shadow-2xl">
             <div className="absolute inset-0">
                 <img 
-                    src="Public/Bespoke/Header_Bespoke.jpeg" 
+                    src="/Bespoke/Header_Bespoke.jpeg" 
                     alt="Bespoke Jewellery Art" 
                     className="w-full h-full object-cover"
                 />
@@ -123,7 +123,7 @@ export const BespokeDesign: React.FC<BespokeDesignProps> = ({ onBack }) => {
                     className="relative order-1 lg:order-2 h-[600px] w-full rounded-[2rem] overflow-hidden shadow-2xl group"
                 >
                     <img 
-                        src="Public/Bespoke/First_Step.jpeg" 
+                        src="/Bespoke/First_Step.jpeg" 
                         alt="Sketching Jewellery" 
                         className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                     />
@@ -148,7 +148,7 @@ export const BespokeDesign: React.FC<BespokeDesignProps> = ({ onBack }) => {
                         In The Workshop
                     </div>
                     <img 
-                        src="Public/Bespoke/Second_Step.jpeg" 
+                        src="/Bespoke/Second_Step.jpeg" 
                         alt="Crafting Jewellery with Fire" 
                         className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                     />
@@ -217,7 +217,7 @@ export const BespokeDesign: React.FC<BespokeDesignProps> = ({ onBack }) => {
                         className="h-[300px] md:h-[400px] rounded-[2rem] overflow-hidden"
                     >
                         <img 
-                            src="Public/Bespoke/Third_Step_1.jpeg" 
+                            src="/Bespoke/Third_Step_1.jpeg" 
                             alt="Setting Stones" 
                             className="w-full h-full object-cover"
                         />
@@ -230,7 +230,7 @@ export const BespokeDesign: React.FC<BespokeDesignProps> = ({ onBack }) => {
                         className="h-[300px] md:h-[400px] rounded-[2rem] overflow-hidden mt-12 md:mt-16"
                     >
                         <img 
-                            src="Public/Bespoke/Third_Step_2.jpeg" 
+                            src="/Bespoke/Third_Step_2.jpeg" 
                             alt="Final Polish" 
                             className="w-full h-full object-cover"
                         />
@@ -252,7 +252,7 @@ export const BespokeDesign: React.FC<BespokeDesignProps> = ({ onBack }) => {
                     className="relative h-[600px] w-full rounded-[2rem] overflow-hidden shadow-2xl group order-1 lg:order-1"
                 >
                     <img 
-                        src="Public/Bespoke/Fourth_Step.jpeg" 
+                        src="/Bespoke/Fourth_Step.jpeg" 
                         alt="The Finishing Line" 
                         className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                     />

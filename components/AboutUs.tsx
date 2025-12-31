@@ -30,7 +30,7 @@ export const AboutUs: React.FC<AboutUsProps> = ({ onBack }) => {
       <div className="relative w-full max-w-[1400px] mx-auto px-6 mb-24">
         <div className="relative rounded-[3rem] overflow-hidden shadow-2xl h-[80vh] min-h-[600px]">
             <img 
-                src= "Public/AboutUs/Dark_Gold_Dust.jpg"
+                src= "/AboutUs/Dark_Gold_Dust.jpg"
                 alt="Gold Dust and Legacy" 
                 className="w-full h-full object-cover"
             />
@@ -110,7 +110,7 @@ export const AboutUs: React.FC<AboutUsProps> = ({ onBack }) => {
              >
                  <div className="relative rounded-3xl overflow-hidden shadow-warm-xl border border-gold-200 dark:border-white/10 h-[400px] md:h-[500px]">
                      <img 
-                        src="Public/AboutUs/Krupanidhi.jpeg"
+                        src="/AboutUs/Krupanidhi.jpeg"
                         alt="Vintage Scales of Trust" 
                         className="w-full h-full object-cover sepia-[0.3]"
                      />
@@ -221,7 +221,7 @@ export const AboutUs: React.FC<AboutUsProps> = ({ onBack }) => {
              >
                  <div className="relative rounded-3xl overflow-hidden shadow-2xl border border-gold-200 dark:border-white/10 h-[400px] md:h-[500px]">
                      <img 
-                        src="Public/AboutUs/ShreeKrupanidhi.jpg" 
+                        src="/AboutUs/ShreeKrupanidhi.jpg" 
                         alt="Luxury Modern Showroom" 
                         className="w-full h-full object-cover"
                      />
