@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Krupanidhi Jewellers</title>
+    <link rel="icon" type="image/svg+xml" href="Public/Logo/Krupanidhi.svg">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Inter:wght@300;400;500;600&family=Montserrat:wght@300;400;500;600;700&family=Cormorant+Garamond:wght@400;500;600;700&family=Merriweather:wght@300;400;700&family=DM+Sans:wght@400;500;700&family=Quicksand:wght@300;400;500;600;700&family=Bellota:wght@300;400;700&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            fontFamily: {
+              serif: ['var(--font-serif)', 'serif'],
+              sans: ['var(--font-sans)', 'sans-serif'],
+            },
+            colors: {
+              gold: {
+                50: '#FBF8F1', // Warm white/Beige (Main Background)
+                100: '#F5EED9', // Card Background
+                200: '#EBE0BC', // Borders
+                300: '#DFCFA0',
+                400: '#D4BF83', 
+                500: '#C0A865',
+                600: '#9C8648',
+                700: '#7A6736',
+              },
+              neutral: {
+                850: '#151515',
+                900: '#0f0f0f',
+                950: '#050505', // Deepest Black
+              },
+              amber: {
+                900: '#4a3b2a',
+                950: '#2a1a08', // Dark Brown text
+              }
+            },
+            boxShadow: {
+              'warm-sm': '0 1px 2px 0 rgba(120, 100, 80, 0.05)',
+              'warm': '0 4px 6px -1px rgba(120, 100, 80, 0.05), 0 2px 4px -1px rgba(120, 100, 80, 0.03)',
+              'warm-lg': '0 10px 15px -3px rgba(120, 100, 80, 0.08), 0 4px 6px -2px rgba(120, 100, 80, 0.04)',
+              'warm-xl': '0 20px 25px -5px rgba(120, 100, 80, 0.1), 0 10px 10px -5px rgba(120, 100, 80, 0.04)',
+            },
+            animation: {
+              'spin-slow': 'spin 12s linear infinite',
+              'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+              'fade-in': 'fadeIn 1s ease-out forwards',
+            },
+            keyframes: {
+              fadeIn: {
+                '0%': { opacity: '0' },
+                '100%': { opacity: '1' },
+              },
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      :root {
+        --font-serif: 'Playfair Display', serif;
+        --font-sans: 'Inter', sans-serif;
+      }
+      
+      /* Elegant: Now Bellota Stylish rounded */
+      body.style-elegant {
+        --font-serif: 'Bellota', cursive;
+        --font-sans: 'Bellota', sans-serif;
+      }
+
+      /* Modern: Clean, geometric headers */
+      body.style-modern {
+        --font-serif: 'Montserrat', sans-serif; 
+        --font-sans: 'DM Sans', sans-serif;
+      }
+      
+      /* Classic: Traditional serif, readable sans */
+      body.style-classic {
+         --font-serif: 'Merriweather', serif;
+         --font-sans: 'Inter', sans-serif;
+      }
+      
+      /* Minimal: All Sans-serif */
+      body.style-minimal {
+         --font-serif: 'DM Sans', sans-serif;
+         --font-sans: 'DM Sans', sans-serif;
+      }
+
+      /* Soft: Quicksand Rounded */
+      body.style-soft {
+         --font-serif: 'Quicksand', sans-serif;
+         --font-sans: 'Quicksand', sans-serif;
+      }
+
+      /* Thicker body text for Default, Elegant (Bellota), and others */
+      body p, 
+      body li, 
+      body span,
+      body a {
+        font-weight: 500;
+      }
+
+      /* Custom Scrollbar */
+      ::-webkit-scrollbar {
+        width: 14px;
+        background-color: transparent;
+      }
+      
+      ::-webkit-scrollbar-track {
+        background-color: transparent;
+      }
+
+      ::-webkit-scrollbar-thumb {
+        background-color: #9C8648;
+        border-radius: 99px;
+        border: 5px solid transparent;
+        background-clip: content-box;
+        transition: background-color 0.3s, border-width 0.3s;
+      }
+      
+      html.dark ::-webkit-scrollbar-thumb {
+         background-color: #C0A865;
+         border: 5px solid transparent;
+      }
+
+      ::-webkit-scrollbar-thumb:hover {
+        background-color: #7A6736;
+        border-width: 2px;
+      }
+      
+      html.dark ::-webkit-scrollbar-thumb:hover {
+         background-color: #D4BF83;
+         border-width: 2px;
+      }
+
+      .hide-scrollbar::-webkit-scrollbar {
+        display: none;
+      }
+      .hide-scrollbar {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+      }
+      
+      /* Thin scrollbar for inside menus - ALWAYS VISIBLE */
+      .thin-scrollbar::-webkit-scrollbar {
+        width: 8px; /* Standard thin width */
+      }
+      
+      .thin-scrollbar::-webkit-scrollbar-track {
+        background: rgba(0, 0, 0, 0.05); /* Faint track for context */
+      }
+      
+      html.dark .thin-scrollbar::-webkit-scrollbar-track {
+        background: rgba(255, 255, 255, 0.1); /* Increased visibility for dark mode track */
+      }
+
+      /* Solid theme color for inner menus with border transparency for slim look */
+      .thin-scrollbar::-webkit-scrollbar-thumb {
+         background-color: #9C8648; /* Gold 600 */
+         border-radius: 4px;
+         border: 2px solid transparent; /* Creates 4px visible width */
+         background-clip: content-box;
+      }
+      
+      html.dark .thin-scrollbar::-webkit-scrollbar-thumb {
+         background-color: #D4BF83; /* Gold 400 */
+         border-radius: 4px;
+         border: 2px solid transparent; /* Match light theme padding for same visual size */
+         background-clip: content-box;
+      }
+
+      .thin-scrollbar::-webkit-scrollbar-thumb:hover {
+         background-color: #7A6736;
+      }
+      
+      html.dark .thin-scrollbar::-webkit-scrollbar-thumb:hover {
+         background-color: #F5EED9; /* Gold 100 on hover */
+      }
+      
+      .glass-panel {
+        backdrop-filter: blur(16px);
+        -webkit-backdrop-filter: blur(16px);
+        transition: background-color 0.3s ease, border-color 0.3s ease;
+      }
+      
+      html:not(.dark) .glass-panel {
+        background: rgba(251, 248, 241, 0.7);
+        border: 1px solid rgba(192, 168, 101, 0.2);
+        box-shadow: 0 8px 32px rgba(156, 134, 72, 0.05);
+      }
+      
+      .dark .glass-panel {
+         background: rgba(0, 0, 0, 0.4);
+         border: 1px solid rgba(255, 255, 255, 0.08);
+      }
+
+      .text-shadow-sm {
+        text-shadow: 0 1px 2px rgba(0,0,0,0.3);
+      }
+      
+      html.text-size-sm { font-size: 14px; }
+      html.text-size-md { font-size: 16px; }
+      html.text-size-lg { font-size: 18px; }
+
+      html.high-contrast {
+        --hc-bg-light: #ffffff;
+        --hc-bg-dark: #000000;
+        --hc-border-light: #000000;
+        --hc-border-dark: #ffffff;
+      }
+      
+      html.high-contrast .glass-panel,
+      html.high-contrast nav,
+      html.high-contrast .bg-white\/40, 
+      html.high-contrast .bg-white\/70,
+      html.high-contrast .backdrop-blur-xl,
+      html.high-contrast .backdrop-blur-sm {
+        backdrop-filter: none !important;
+        background-color: var(--hc-bg-light) !important;
+        border: 2px solid var(--hc-border-light) !important;
+      }
+      
+      html.high-contrast.dark .glass-panel,
+      html.high-contrast.dark nav,
+      html.high-contrast.dark .bg-neutral-900\/40,
+      html.high-contrast.dark .bg-neutral-900\/80 {
+        background-color: var(--hc-bg-dark) !important;
+        border: 2px solid var(--hc-border-dark) !important;
+      }
+      
+      html.high-contrast img {
+        filter: contrast(1.1);
+      }
+      
+      html.high-contrast * {
+        text-shadow: none !important;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "lucide-react": "https://esm.sh/lucide-react@^0.561.0",
+    "framer-motion": "https://esm.sh/framer-motion@^12.23.26",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3",
+    "@google/genai": "https://esm.sh/@google/genai@^1.34.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="bg-gold-50 text-amber-950 dark:bg-neutral-950 dark:text-white antialiased selection:bg-gold-400 selection:text-white transition-colors duration-500 font-serif">
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
