@@ -26,7 +26,7 @@ export const Footer: React.FC<FooterProps> = ({ onTermsClick, onPrivacyClick }) 
               Crafting timeless elegance since 1991. Every piece tells a story of love, legacy, and unparalleled artistry.
             </p>
             <div className="flex gap-4">
-              <a href="#" className="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center hover:bg-gold-400 hover:text-black hover:border-transparent transition-all duration-300">
+              <a href="https://www.instagram.com/krupanidhi_jewellers?igsh=MXc0ZDVqbjA4NWU0eg==" className="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center hover:bg-gold-400 hover:text-black hover:border-transparent transition-all duration-300">
                 <Instagram className="w-4 h-4" />
               </a>
               <a href="#" className="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center hover:bg-gold-400 hover:text-black hover:border-transparent transition-all duration-300">
