@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Analytics } from '@vercel/analytics/react';
 import { Navbar } from './components/Navbar';
 import { Hero } from './components/Hero';
 import { ValueProposition } from './components/ValueProposition';
@@ -122,6 +123,7 @@ const App: React.FC = () => {
 
       <Footer onTermsClick={navigateToTerms} onPrivacyClick={navigateToPrivacy} />
       <ScrollToTop />
+      <Analytics />
     </div>
   );
 };
