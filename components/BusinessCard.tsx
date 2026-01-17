@@ -195,7 +195,6 @@ export const BusinessCard = () => {
               {/* Tagline */}
               <div className="relative z-10">
                   <div className="flex items-center justify-center gap-2 text-[#C0A865] mb-2">
-                    <Scale className="w-4 h-4" />
                     <span className="text-sm font-bold uppercase tracking-wider">#DharamKato</span>
                   </div>
                   <p className="text-[#C0A865]/40 text-[9px] uppercase tracking-widest font-sans">krupanidhi-jewellers.vercel.app</p>
