@@ -19,6 +19,7 @@ import { BespokeDesign } from './components/BespokeDesign';
 import { CuratedBy } from './components/CuratedBy';
 import { AboutUs } from './components/AboutUs';
 import { Materials } from './components/Materials';
+import { BusinessCard } from './components/BusinessCard';
 
 const App: React.FC = () => {
   const [view, setView] = useState<'home' | 'terms' | 'privacy' | 'care' | 'bespoke' | 'about' | 'materials'>('home');
@@ -79,6 +80,7 @@ const App: React.FC = () => {
           <Testimonials />
           <ReachOutCTA />
           <WhatsAppConnect />
+          <BusinessCard />
         </main>
       )}
 
